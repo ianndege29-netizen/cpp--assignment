@@ -1,1 +1,61 @@
-#include <iostream> using namespace std; int main() { double number1, number2, result; char operation; cout << "Enter the first number: "; cin >> number1; cout << "Enter an operator (+, -, *, /): "; cin >> operation; cout << "Enter the second number: "; cin >> number2; switch (operation) { case '+': result = number1 + number2; cout << "Result: " << result << endl; break; case '-': result = number1 - number2; cout << "Result: " << result << endl; break; case '*': result = number1 * number2; cout << "Result: " << result << endl; break; case '/': if (number2 != 0) { result = number1 / number2; cout << "Result: " << result << endl; } else { cout << "Error: Division by zero is not allowed." << endl; } break; default: cout << "Invalid operator!" << endl; } return 0; }
+#include <iostream> 
+
+using namespace std;
+
+ int main() 
+
+ { double number1, number2, result; char operation;
+
+   cout << "Enter the first number: ";
+   
+  cin >> number1;
+
+   cout << "Enter an operator (+, -, *, /): ";
+
+   cin >> operation;
+   
+   cout << "Enter the second number: ";
+
+    cin >> number2;
+
+     switch (operation) { case '+': result = number1 + number2;
+
+      cout << "Result: " << result << endl; 
+
+      break;
+      
+      case '-':
+      
+      result = number1 - number2;
+
+       cout << "Result: " << result << endl;
+
+        break;
+        
+        case '*':
+        
+        result = number1 * number2;
+
+         cout << "Result: " << result << endl; break; 
+
+         case '/': 
+
+         if (number2 != 0) { result = number1 / number2;
+
+           cout << "Result: " << result << endl;
+
+           }
+            else { cout << "Error: Division by zero is not allowed." << endl;
+
+             }
+
+             break;
+             
+             default: 
+             
+             cout << "Invalid operator!" << endl;
+
+             }
+
+ return 0;
+ }
