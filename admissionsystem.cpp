@@ -1,4 +1,5 @@
 #include <iostream>
+
 #include <string>
 
 using namespace std;
@@ -12,7 +13,9 @@ int main()
     getline(cin, applicantName);
 
     cout << "Enter admission test marks (0 to 100): ";
-    if (!(cin >> marks) || marks < 0 || marks > 100)
+    cin >> marks;
+
+    if (cin.fail() || marks < 0 || marks > 100)
     {
         cout << "Invalid marks. Enter a number from 0 to 100.\n";
         return 1;
